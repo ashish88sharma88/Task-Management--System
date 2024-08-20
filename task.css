@@ -1,0 +1,126 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #778899;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #b0c4de;
+    padding: 80px;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1300px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 4rem;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+h1:hover {
+    text-decoration: underline;
+}
+
+.task-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-input input,
+.task-input textarea,
+.task-input button {
+    padding: 10px;
+    border: 5px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.task-input button {
+    background-color: #778899;
+    color: #fff;
+    cursor: pointer;
+}
+
+.task-input button:hover {
+    background-color: black;
+}
+
+ul#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#task-list li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+ul#task-list li.completed {
+    text-decoration: line-through;
+    background-color: #e0e0e0;
+}
+
+ul#task-list li .task-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+ul#task-list li .task-info .task-deadline {
+    font-size: 0.9em;
+    color: #888;
+}
+
+ul#task-list li .task-comments {
+    font-style: italic;
+    color: #555;
+}
+
+ul#task-list li .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+ul#task-list li .actions button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ul#task-list li .actions button.complete-btn {
+    background-color: #28a745;
+}
+
+ul#task-list li .actions button:hover {
+    opacity: 0.9;
+}
+
+.archive {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.archive ul {
+    border-top: 2px solid #ddd;
+    margin-top: 10px;
+}

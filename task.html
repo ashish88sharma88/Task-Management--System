@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>BER-AM REZI TASK MANAGEMENT SYSTEM</h1>
+
+        <div class="task-input">
+            <input type="text" id="task-title" placeholder="Task Title">
+            <input type="text" id="user-name" placeholder="User Name">
+            <input type="date" id="deadline">
+            <textarea id="comments" placeholder="Comments"></textarea>
+            <button id="add-task">Add Task</button>
+        </div>
+
+        <ul id="task-list">
+            <!-- Tasks will be dynamically added here -->
+        </ul>
+    </div>
+
+    <div class="archive">
+        <h2>Archived Tasks</h2>
+        <ul id="archive-list">
+            <!-- Archived tasks will be dynamically added here -->
+        </ul>
+    </div>
+    </div>
+
+
+    <script src="task.js"></script>
+</body>
+
+</html>
